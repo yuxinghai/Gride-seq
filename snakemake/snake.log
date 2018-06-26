@@ -1,0 +1,22 @@
+Provided cores: 64
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	IR_gene_interaction
+	1	all
+	2
+
+rule IR_gene_interaction:
+    input: /data1/zhoulab/yuxinghai/cluster_data2/parasp/PSF_IR/results_genecodev19/further_analysis/psf_IR.bed6, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/04_GeneHits/GeneHits.bed, /data1/zhoulab/yuxinghai/cluster_data2/software/chrom_size/hg19.chrom.sizes, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/05_interaction/ghits.pkbin.net.gz
+    output: /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/06_IR_interact/IR_ghits.gep.pkmax.net.gz, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/06_IR_interact/IR_dtgt.bed, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/06_IR_interact/IR_ghits.gep.pkavg.net.gz, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/06_IR_interact/IR_ghits.gep.pkavg.bed, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/06_IR_interact/IR_ghits.gep.pkmax.bed
+    jobid: 1
+
+Finished job 1.
+1 of 2 steps (50%) done
+
+localrule all:
+    input: /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/01_mapping/hela_rep1.cDNA.bam, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/01_mapping/hela_rep2.cDNA.bam, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/01_mapping/hela_rep1.gDNA.bam, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/01_mapping/hela_rep2.gDNA.bam, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/01_mapping/rna_dna_rep1.bedu.gz, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/01_mapping/rna_dna_rep2.bedu.gz, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/02_peak_Calling/RNA+.bed, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/03_Gross_coverage/RNA.peakgene.cvg, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/04_GeneHits/GeneMask.bed, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/05_interaction/DNA.bin1k.bg.bed, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/05_interaction/ghits.pkbin.net.gz, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/05_interaction/flt.bed, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/05_interaction/mtx.gz, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/RNA_cor/RNA_cor.pdf, /data1/zhoulab/yuxinghai/cluster_data2/Gride-seq/results/06_IR_interact/IR_ghits.gep.pkavg.net.gz
+    jobid: 0
+
+Finished job 0.
+2 of 2 steps (100%) done

@@ -1,0 +1,4 @@
+chr1	1	200	gene1	0	+
+chr1	200	300	gene2	0	-
+chr1	100	600	gene4	0	-
+chr1	100	500	gene3	0	-
